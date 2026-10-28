@@ -1,0 +1,6 @@
+.git
+.git/**
+.env
+.env.*
+.phpunit.result.cache
+storage/logs/**
