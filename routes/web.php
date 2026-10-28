@@ -22,6 +22,10 @@ Route::get('/nosotros', [AboutController::class, 'index'])->name('about.index');
 Route::get('/contacto', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contacto', [ContactController::class, 'store'])->name('contact.store')->middleware('throttle:5,1');
 Route::get('/carrito', [CartController::class, 'index'])->name('cart.index');
+Route::get('/robots.txt', function () {
+    return response("User-agent: *\nDisallow:\n\nSitemap: ".url('/sitemap.xml')."\n")
+        ->header('Content-Type', 'text/plain');
+});
 
 Route::post('/pedidos', [OrderController::class, 'store'])->name('orders.store')->middleware('throttle:10,1');
 Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter.store')->middleware('throttle:3,1');
