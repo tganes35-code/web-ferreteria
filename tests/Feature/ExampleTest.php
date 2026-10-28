@@ -28,6 +28,19 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function test_production_content_security_policy_allows_google_fonts(): void
+    {
+        $this->app->instance('env', 'production');
+
+        $response = $this->get('/');
+
+        $response->assertOk();
+        $contentSecurityPolicy = $response->headers->get('Content-Security-Policy');
+        $this->assertNotNull($contentSecurityPolicy);
+        $this->assertStringContainsString("style-src 'self' 'unsafe-inline' https://fonts.googleapis.com", $contentSecurityPolicy);
+        $this->assertStringContainsString("font-src 'self' data: https://fonts.gstatic.com", $contentSecurityPolicy);
+    }
+
     public function test_catalog_and_invalid_product_routes_are_available(): void
     {
         $this->get('/catalogo')->assertOk();
