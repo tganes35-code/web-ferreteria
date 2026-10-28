@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews -Indexes
+    DirectoryIndex index.php
+    RewriteEngine On
+
+    # Do not rewrite the entry point again; this prevents an internal loop.
+    RewriteRule ^index\.php$ - [L,NC]
+
+    # The project root is only a fallback document root. Keep Laravel internals private.
+    RewriteRule ^(?:app|bootstrap|config|resources|routes|storage|tests|vendor)(?:/|$) - [R=403,L,NC]
+    RewriteRule ^(?:\.env(?:\..*)?|composer\.(?:json|lock)|package(?:-lock)?\.json|artisan|phpunit\.xml|vite\.config\.js)(?:$|/) - [R=403,L,NC]
+    RewriteRule ^\.(?!well-known)(.*)$ - [R=403,L]
+    RewriteRule ^public(?:/|$) - [R=403,L,NC]
+
+    # Serve only the compiled/public assets from the nested public directory.
+    RewriteRule ^(build|images)/(.*)$ public/$1/$2 [L,NC]
+    RewriteRule ^(favicon\.ico|robots\.txt)$ public/$1 [L,NC]
+
+    # Send every application URL to the root Laravel entry point.
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

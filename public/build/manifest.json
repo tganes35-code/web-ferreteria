@@ -1,0 +1,207 @@
+{
+  "_Navbar-CCkNx4Az.js": {
+    "file": "assets/Navbar-CCkNx4Az.js",
+    "name": "Navbar",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_chevron-right-BGDmWCai.js": {
+    "file": "assets/chevron-right-BGDmWCai.js",
+    "name": "chevron-right",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_clock-CiQzrwwM.js": {
+    "file": "assets/clock-CiQzrwwM.js",
+    "name": "clock",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_headphones-BkpWpAmX.js": {
+    "file": "assets/headphones-BkpWpAmX.js",
+    "name": "headphones",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_layout-grid-C_d7ax_D.js": {
+    "file": "assets/layout-grid-C_d7ax_D.js",
+    "name": "layout-grid",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_refresh-cw-CzLwJbMA.js": {
+    "file": "assets/refresh-cw-CzLwJbMA.js",
+    "name": "refresh-cw",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_star-BdmzWvQd.js": {
+    "file": "assets/star-BdmzWvQd.js",
+    "name": "star",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "_zap-zQ4tElfS.js": {
+    "file": "assets/zap-zQ4tElfS.js",
+    "name": "zap",
+    "imports": [
+      "resources/js/app.jsx"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-yCBXbsaY.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/Pages/About/Index.jsx": {
+    "file": "assets/Index-Cb2pn72b.js",
+    "name": "Index",
+    "src": "resources/js/Pages/About/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_headphones-BkpWpAmX.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Cart/Index.jsx": {
+    "file": "assets/Index-DWpeLT8c.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Cart/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Catalog/Index.jsx": {
+    "file": "assets/Index-OhH5WIOn.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Catalog/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_layout-grid-C_d7ax_D.js",
+      "_star-BdmzWvQd.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Categories/Index.jsx": {
+    "file": "assets/Index-CHAcl1Ml.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Categories/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_chevron-right-BGDmWCai.js",
+      "_zap-zQ4tElfS.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Contact/Index.jsx": {
+    "file": "assets/Index-DH2W-iuK.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Contact/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_clock-CiQzrwwM.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Home.jsx": {
+    "file": "assets/Home-Civw9gIP.js",
+    "name": "Home",
+    "src": "resources/js/Pages/Home.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_zap-zQ4tElfS.js",
+      "_chevron-right-BGDmWCai.js",
+      "_layout-grid-C_d7ax_D.js",
+      "_headphones-BkpWpAmX.js",
+      "_refresh-cw-CzLwJbMA.js",
+      "_star-BdmzWvQd.js",
+      "_clock-CiQzrwwM.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Product/Show.jsx": {
+    "file": "assets/Show-D2tVRljp.js",
+    "name": "Show",
+    "src": "resources/js/Pages/Product/Show.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_star-BdmzWvQd.js",
+      "_refresh-cw-CzLwJbMA.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/Pages/Promotions/Index.jsx": {
+    "file": "assets/Index-Dv6K54TL.js",
+    "name": "Index",
+    "src": "resources/js/Pages/Promotions/Index.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx",
+      "_Navbar-CCkNx4Az.js",
+      "_chevron-right-BGDmWCai.js",
+      "_star-BdmzWvQd.js"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-5UJgiGmL.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/About/Index.jsx",
+      "resources/js/Pages/Cart/Index.jsx",
+      "resources/js/Pages/Catalog/Index.jsx",
+      "resources/js/Pages/Categories/Index.jsx",
+      "resources/js/Pages/Contact/Index.jsx",
+      "resources/js/Pages/Home.jsx",
+      "resources/js/Pages/Product/Show.jsx",
+      "resources/js/Pages/Promotions/Index.jsx"
+    ],
+    "css": [
+      "assets/app-yCBXbsaY.css"
+    ]
+  }
+}
